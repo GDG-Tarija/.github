@@ -6,7 +6,7 @@
 - **Título** con el mismo formato que un commit, en inglés: `feat(devfest2026): add speakers section`.
 - En la descripción, enlaza el WI: `Closes #42`. El issue se cierra solo al hacer merge.
 - (Opcional) Si hay cambios visuales, agrega un screenshot.
-- Se necesita **1 aprobación** del un organizer o la mayoria del equipo de desarrollo para hacer merge.
+- Se necesita **1 aprobación** de un organizer o de la mayoría del equipo de desarrollo para hacer merge.
 
 ## Merge
 

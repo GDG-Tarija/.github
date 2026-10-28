@@ -9,6 +9,15 @@
 
 > El nombre exacto depende del repo (por ejemplo, la landing usa `master` y `develop`; el back-office usa `dev`). Nunca hagas push directo a estas ramas.
 
+<!-- TODO: reemplazar con el diagrama del flujo de ramas -->
+<!-- ![Flujo de ramas](img/branching-strategy.png) -->
+
+```
+feature / evento ──PR (squash)──▶ develop ──PR (merge)──▶ master ──▶ release + deploy
+                                     ▲                       │
+                                     └──── PR ◀── fix (hotfix) ◀┘
+```
+
 ## Cómo nombrar tu rama
 
 Toda rama incluye el **número del WI** (el issue de GitHub Projects) y una **descripción corta en inglés**, en `kebab-case`.

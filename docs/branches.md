@@ -9,14 +9,15 @@
 
 > El nombre exacto depende del repo (por ejemplo, la landing usa `master` y `develop`; el back-office usa `dev`). Nunca hagas push directo a estas ramas.
 
-<!-- TODO: reemplazar con el diagrama del flujo de ramas -->
-<!-- ![Flujo de ramas](img/branching-strategy.png) -->
+### Flujo normal
 
-```
-feature / evento ──PR (squash)──▶ develop ──PR (merge)──▶ master ──▶ release + deploy
-                                     ▲                       │
-                                     └──── PR ◀── fix (hotfix) ◀┘
-```
+![Flujo normal: rama desde develop, PR con squash a develop y PR de release a master](img/branching-normal.png)
+
+### Hotfix
+
+Solo para bugs urgentes en producción. Ver los pasos en [Releases](releases.md#arreglo-urgente-en-producción-hotfix).
+
+![Hotfix: rama desde master, PR a master, release PATCH y PR de master a develop](img/branching-hotfix.png)
 
 ## Cómo nombrar tu rama
 
